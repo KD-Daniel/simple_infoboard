@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    background-color: #4CAF50; /* A pleasant green color */
+    padding: 20px;
+    margin: 0;
+    font-size: 2em;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #e2e2e2;
+    border-bottom: 1px solid #ccc;
+}
+
+.controls label {
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.controls input[type="week"] {
+    margin-right: 20px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.controls button {
+    background-color: #4CAF50; /* Match the header color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.controls button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    height: calc(100vh - 140px); /* Full height minus header and controls */
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures equal column widths */
+}
+
+th, td {
+    border: 5px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+    white-space: pre-line; /* This will respect line breaks and whitespace */
+    width: 12.5%; /* 100% divided by 8 columns */
+}
+
+th {
+    background-color: #4CAF50; /* Match the header color */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    background-color: #fff;
+    color: #333;
+    height: 100px; /* Minimum height for better visual spacing */
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+    padding: 10px;
+    box-sizing: border-box;
+}
