@@ -17,7 +17,7 @@ function loadScheduleData(year, weekNumber) {
             if (scheduleData.length === 0) {
                 // Insert 9 empty rows into the database
                 $.ajax({
-                    url: 'insert_empty_rows.php',
+                    url: 'php/insert_empty_rows.php',
                     method: 'POST',
                     data: {
                         year: year,
@@ -73,7 +73,7 @@ function saveScheduleData() {
     });
 
     $.ajax({
-        url: 'update_data.php',
+        url: 'php/update_data.php',
         method: 'POST',
         data: {
             updates: JSON.stringify(updatedData)

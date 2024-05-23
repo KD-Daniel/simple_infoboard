@@ -52,6 +52,12 @@ $(document).ready(function() {
     var currentYear = new Date().getFullYear();
     var currentWeekNumber = getWeekNumber(new Date());
     fetchScheduleData(currentYear, currentWeekNumber);
+
+    setInterval(function() {
+        var currentYear = new Date().getFullYear();
+        var currentWeekNumber = getWeekNumber(new Date());
+        fetchScheduleData(currentYear, currentWeekNumber);
+    }, 10000);
 });
 
 // Function to get the current week number
